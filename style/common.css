@@ -1,0 +1,277 @@
+﻿/*
+[Contents]
+
+	0- Global
+	1- Header
+	2- Main Container
+	3- Main
+	4- Sidebar
+	5- Footer
+*/
+
+/* =0 Global
+/*---------------------------------------------------------------------------------------------------------------------*!*/
+html,body{
+    width:100%;
+    height: 100%;
+}
+a{text-decoration: none;color: #000000;}
+a:hover{text-decoration: none;cursor: pointer;}
+
+/* =1 Header
+---------------------------------------------------------------------------------------------------------------------*/
+#header{
+    position: relative;
+    width:100%;
+    height: 140px;
+}
+#logo{
+    position: absolute; /*设置绝对定位，相对于header*/
+    top: 35%;
+    left: 15%;
+    width:120px;
+    height:60px;
+    /*border:2px solid #000000;*/
+}
+ #header .Ad{
+    position: absolute; /*设置绝对定位，相对于header*/
+    top: 55%;
+    left: 24%;
+    width:180px;
+     height: 48px;
+     font-size: 15px;
+     line-height: 15px;
+}
+#header .top-right{
+    position: absolute; /*设置绝对定位，相对于header*/
+    right: 10%;
+    top: 3%;
+    width:235px;
+    height:111px;
+    background: url(../images/top_right_gwc.jpg) no-repeat;
+    /*border:2px solid #000000;*/
+}
+#header .top-right a{
+    display: block;
+    margin-top:90px;
+    margin-left:55px;
+    color:#ffffff;
+}
+#navigation{
+    position: relative;
+    float: left;
+    width:100%;
+    height:48px;
+    min-width: 1350px;
+
+}
+#nav-bar{
+    position:relative;
+    /*float: left;*/
+    margin:0 auto;
+    height:100%;
+    width:1050px;
+    max-width: 1050px;
+    /*border:1px solid #98bf21;*/
+}
+#navigation .nav-left{
+    position: absolute;
+    float:left;
+    top:8px;
+    left:10%;
+    width:20px;
+}
+#navigation .nav-right{
+    position: absolute;
+    top:14px;
+    float: right;
+    right:10%;
+    width:20px;
+}
+.nav-left img ,.nav-right img{
+    width:100%;
+    height:100%;
+}
+
+#navigation .subnav{
+    float: left;
+    list-style: none;
+    margin: 0 -8px;
+    margin-top: 8px;
+    width:191px;
+    height:38px;
+    text-align: center;
+    background: url(../images/navbar01.png) no-repeat;
+    background-size: cover;
+}
+#navigation .subnav a{
+    display: block;
+    line-height: 35px;
+    color:#FFFFFF;
+}
+#navigation .subnav:hover{
+    /*color:#0392ce;*/
+    background: url(../images/navbar02.png) no-repeat;
+    background-size: cover;
+}
+#navigation .subnav a:hover{
+    color:#0392CE;
+}
+
+#banner-wrapper{
+    float:left;
+    margin-top:5px;
+    width: 100%;
+    height:280px;
+
+}
+.banner-left{
+    float:left;
+    width:10%;
+    height:100%;
+    /*border:2px solid #000000;*/
+}
+#banner-pic-wrap{
+    position: relative;
+    float:left;
+    width:80%;
+    height: 100%;
+}
+
+.banner-pic{
+    position: absolute; /*设置绝对定位，相对于banner_pic_wrap*/
+    top:-1px;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-right{
+    float:right;
+    width:10%;
+    height:100%;
+}
+
+.banner-left img,.banner-right img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =2 Main Container
+---------------------------------------------------------------------------------------------------------------------*/
+
+/* =3 Main
+---------------------------------------------------------------------------------------------------------------------*/
+#main{
+    position: relative;
+    float:left;
+    top: 15px;
+    width:100%;
+    height:400px;
+    /*border:2px solid #000000;*/
+
+}
+#main .index{
+    position: absolute;
+    float:left;
+    left: 180px;
+}
+#main .index span{
+    color:#a7a9ac;
+}
+#main .leftcolumn{
+    position: absolute;
+    float:left;
+    left: 180px;
+    top: 25px;
+    width:400px;
+    min-width: 400px;
+
+}
+.leftcolumn h2{
+    color: #ffffff;
+    background: url(../images/main_03.jpg) no-repeat;
+    text-transform: uppercase;
+    font-size: 24px;
+
+}
+#main .leftcolumn .sidebar{
+    line-height: 15px;
+    text-transform: uppercase;
+}
+#main .submenu{
+    margin-left: 40px;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+.sidebar-menu{
+    display:none;
+}
+.sidebar a:hover{
+    color:#0392ce;
+}
+.submenu a:hover{
+    color:#0392ce;
+}
+#main .rightcolumn{
+    position: absolute;
+    float:right;
+    right: 11%;
+    top: 25px;
+    width:575px;
+    min-width: 575px;
+
+}
+.rightcolumn h2{
+    left:42%;
+    background: url(../images/main_05.jpg) no-repeat;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #ffffff;
+
+}
+.page-wrapper{
+    /*position: absolute;*/
+    margin-top:10px;
+    font-size: 18px;
+    color:#0392ce;
+    line-height: 24px;
+}
+.page-next-wrapper{
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 12px;
+    color:#000000;
+}
+/* =4 Sidebar
+---------------------------------------------------------------------------------------------------------------------*/
+
+/* =5 Footer
+---------------------------------------------------------------------------------------------------------------------*/
+#bottominfo{
+    float: left;
+    margin-top:35px;
+    margin-bottom:50px;
+    width: 100%;
+    border:#42423b;
+    padding:20px 0px;
+    background: #ebebeb;
+    /*overflow: hidden;*/
+
+}
+.bottomcolumn{
+    float: left;
+    width:16%;
+    margin-left:4%;
+    /*margin-right: 20px;*/
+}
+.bottomcolumn ul li{
+    color:#8a8c8e;
+
+}
+.bottomcolumn h3{
+    padding:0px 0 5px 5px;
+    /*color:#8a8c8e;*/
+    font-family: Arial;
+    font-size:16px;
+}
