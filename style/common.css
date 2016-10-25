@@ -17,101 +17,113 @@ html,body{
 }
 a{text-decoration: none;color: #000000;}
 a:hover{text-decoration: none;cursor: pointer;}
-
+.global-width{
+    width: 974px;
+    margin:0 auto;
+}
 /* =1 Header
 ---------------------------------------------------------------------------------------------------------------------*/
 #header{
     position: relative;
-    width:100%;
-    height: 140px;
+    height: 125px;
+    /*border:1px solid #98bf21;*/
 }
 #logo{
     position: absolute; /*设置绝对定位，相对于header*/
-    top: 35%;
-    left: 15%;
-    width:120px;
-    height:60px;
+    float:left;
+    top: 30px;
+    left: 40px;
+    width:152px;
+    height:65px;
     /*border:2px solid #000000;*/
 }
- #header .Ad{
+ #header .slogan{
     position: absolute; /*设置绝对定位，相对于header*/
-    top: 55%;
-    left: 24%;
-    width:180px;
-     height: 48px;
+    top: 65px;
+    left:220px;
+     width:200px;
+     height: 35px;
      font-size: 15px;
      line-height: 15px;
 }
+/*#header .slogan span{*/
+    /*font-weight: bold;*/
+/*}*/
 #header .top-right{
-    position: absolute; /*设置绝对定位，相对于header*/
-    right: 10%;
-    top: 3%;
-    width:235px;
-    height:111px;
-    background: url(../images/top_right_gwc.jpg) no-repeat;
-    /*border:2px solid #000000;*/
-}
-#header .top-right a{
-    display: block;
-    margin-top:90px;
-    margin-left:55px;
-    color:#ffffff;
-}
-#navigation{
-    position: relative;
-    float: left;
-    width:100%;
-    height:48px;
-    min-width: 1350px;
-
-}
-#nav-bar{
-    position:relative;
-    /*float: left;*/
-    margin:0 auto;
-    height:100%;
-    width:1050px;
-    max-width: 1050px;
+    float:right;
+    margin-top: 5px;
     /*border:1px solid #98bf21;*/
 }
-#navigation .nav-left{
+#form-search{
+    clear: right;
+    float: right ;
+    margin-top: 2px;
+    width:238px;
+    height:26px;
+    /*border:1px solid #98bf21;*/
+}
+#form-search .editbox-search{
+    float:left;
+    border: 0;
+    width: 204px;
+    height:26px;
+    text-align: center;
+    color: #FFFFFF;
+    background: url(images/search_03.jpg) no-repeat;
+}
+#form-search .button-search{
+    float:right;
+    border: 0;
+    width: 26px;
+    height:26px;
+    background: url(images/search_btn_03.jpg) no-repeat;
+}
+#navigation{
+    /*position: relative;*/
+    clear: both;
+    /*float: left;*/
+    width:100%;
+    height:38px;
+    /*border:1px solid #98bf21;*/
+
+}
+#nav{
+    position: relative;
+    height: 40px;
+}
+#nav-bar{
+    margin-left: -1px;
+    height:38px;
+    width:974px;
+}
+#nav-bar .nav-left{
     position: absolute;
     float:left;
-    top:8px;
-    left:10%;
-    width:20px;
+    width:19px;
 }
-#navigation .nav-right{
-    position: absolute;
-    top:14px;
+#nav-bar .nav-right{
+    /*position: absolute;*/
+    margin-top:6px;
     float: right;
-    right:10%;
-    width:20px;
-}
-.nav-left img ,.nav-right img{
-    width:100%;
-    height:100%;
+    width:19px;
 }
 
 #navigation .subnav{
     float: left;
-    list-style: none;
-    margin: 0 -8px;
-    margin-top: 8px;
-    width:191px;
+    margin-right: -20px;
+    width:179px;
     height:38px;
     text-align: center;
-    background: url(../images/navbar01.png) no-repeat;
+    background: url(images/navbar01.png) no-repeat;
     background-size: cover;
 }
 #navigation .subnav a{
     display: block;
-    line-height: 35px;
+    line-height: 38px;
     color:#FFFFFF;
 }
 #navigation .subnav:hover{
-    /*color:#0392ce;*/
-    background: url(../images/navbar02.png) no-repeat;
+    background: url(images/navbar02.png) no-repeat;
     background-size: cover;
 }
 #navigation .subnav a:hover{
@@ -119,43 +131,34 @@ a:hover{text-decoration: none;cursor: pointer;}
 }
 
 #banner-wrapper{
-    float:left;
-    margin-top:5px;
+    /*float:left;*/
+    clear: both;
+    margin-top:1px;
     width: 100%;
     height:280px;
+    background: url(images/banner_bg_03.jpg) repeat-x;
 
 }
-.banner-left{
-    float:left;
-    width:10%;
-    height:100%;
-    /*border:2px solid #000000;*/
-}
+
 #banner-pic-wrap{
     position: relative;
-    float:left;
-    width:80%;
-    height: 100%;
 }
-
-.banner-pic{
-    position: absolute; /*设置绝对定位，相对于banner_pic_wrap*/
-    top:-1px;
-    width: 100%;
-    height: 100%;
+#banner-pic-wrap .banner-left-shadow {
+    position: absolute;
+    float: left;
+    top:0;
+    left:-37px;
+    width:37px;
+    height:277px;
 }
-
-.banner-right{
-    float:right;
-    width:10%;
-    height:100%;
+#banner-pic-wrap .banner-right-shadow {
+    position: absolute;
+    float: right;
+    top:0;
+    right:-37px;
+    width:37px;
+    height:277px;
 }
-
-.banner-left img,.banner-right img{
-    width: 100%;
-    height: 100%;
-}
-
 
 /* =2 Main Container
 ---------------------------------------------------------------------------------------------------------------------*/
@@ -163,46 +166,81 @@ a:hover{text-decoration: none;cursor: pointer;}
 /* =3 Main
 ---------------------------------------------------------------------------------------------------------------------*/
 #main{
+    clear: both;
     position: relative;
-    float:left;
-    top: 15px;
-    width:100%;
-    height:400px;
-    /*border:2px solid #000000;*/
+    padding:15px 0 0 0;
+    height:auto;
+    min-height: 400px;
+    /*border:1px solid #98bf21;*/
 
+}
+#main .main-left-shadow {
+    position: absolute;
+    float: left;
+    left:-20px;
+    top:-3px;
+    width:20px;
+    height:368px;
+}
+#main .main-right-shadow {
+    position: absolute;
+    float: right;
+   top:-3px;
+    right:-24px;
+    width:24px;
+    height:368px;
 }
 #main .index{
     position: absolute;
     float:left;
-    left: 180px;
+    left: 40px;
+    width: 287px;
+    height: 14px;
+    top:20px
 }
 #main .index span{
     color:#a7a9ac;
 }
+#main .index .breadcrumb{
+    float:right;
+    width: 172px;
+
+
+}
 #main .leftcolumn{
     position: absolute;
     float:left;
-    left: 180px;
-    top: 25px;
-    width:400px;
-    min-width: 400px;
+    left: 40px;
+    top: 42px;
+    width:287px;
+    min-width: 287px;
 
 }
-.leftcolumn h2{
+.leftcolumn h3{
+    height:38px;
+    line-height: 38px;
+    font-weight: normal;
     color: #ffffff;
-    background: url(../images/main_03.jpg) no-repeat;
+    background: url(images/main_05.jpg) no-repeat right top;
     text-transform: uppercase;
     font-size: 24px;
+    padding:0 0 15px 10px;
+    border-bottom:3px dotted #000000;
 
 }
-#main .leftcolumn .sidebar{
-    line-height: 15px;
+#main .leftcolumn .sidebar {
+    /*line-height: 15px;*/
+    padding: 5px 0;
     text-transform: uppercase;
+    border-bottom:3px dotted #000000;
 }
 #main .submenu{
-    margin-left: 40px;
+   padding-left: 45px;
     text-transform: uppercase;
     line-height: 18px;
+}
+#last-item{
+    border-bottom:3px dotted #000000;
 }
 .sidebar-menu{
     display:none;
@@ -214,31 +252,36 @@ a:hover{text-decoration: none;cursor: pointer;}
     color:#0392ce;
 }
 #main .rightcolumn{
-    position: absolute;
+    position: relative;
     float:right;
-    right: 11%;
+    right: 40px;
     top: 25px;
-    width:575px;
-    min-width: 575px;
+    width:571px;
+    min-width: 571px;
 
 }
-.rightcolumn h2{
-    left:42%;
-    background: url(../images/main_05.jpg) no-repeat;
+.rightcolumn h3{
+    /*left:42%;*/
+    height:38px;
+    font-weight: normal;
+    line-height: 38px;
     text-transform: uppercase;
     font-size: 24px;
     color: #ffffff;
+    padding:0 0 15px 10px;
+    border-bottom: 3px dotted #000000;
+    background: url(images/main_05.jpg) no-repeat;
 
 }
 .page-wrapper{
     /*position: absolute;*/
-    margin-top:10px;
+    margin-top:20px;
     font-size: 18px;
     color:#0392ce;
     line-height: 24px;
 }
 .page-next-wrapper{
-    margin-top: 10px;
+    margin-top: 30px;
     line-height: 24px;
     font-size: 12px;
     color:#000000;
@@ -248,29 +291,36 @@ a:hover{text-decoration: none;cursor: pointer;}
 
 /* =5 Footer
 ---------------------------------------------------------------------------------------------------------------------*/
-#bottominfo{
-    float: left;
-    margin-top:35px;
-    margin-bottom:50px;
+#bottom{
+    clear: both;
+    position: relative;
+    float:left;
+    margin-top:40px;
+    margin-bottom:120px;
     width: 100%;
-    border:#42423b;
-    padding:20px 0px;
-    background: #ebebeb;
-    /*overflow: hidden;*/
+    height:175px;
+    background:#ebebeb;
+    /*border:1px solid #98bf21;*/
 
+}
+#bottominfo{
+    height:175px;
 }
 .bottomcolumn{
     float: left;
-    width:16%;
-    margin-left:4%;
+    width:154px;
+    margin-right:36px;
+    margin-bottom: 15px;
     /*margin-right: 20px;*/
 }
-.bottomcolumn ul li{
+.bottomcolumn ul li a{
+    /*line-height: 18px;*/
+    text-decoration: underline;
     color:#8a8c8e;
 
 }
 .bottomcolumn h3{
-    padding:0px 0 5px 5px;
+    padding:25px 0 10px 0px;
     /*color:#8a8c8e;*/
     font-family: Arial;
     font-size:16px;
