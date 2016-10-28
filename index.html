@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
 	<meta charset="utf-8">
@@ -13,80 +13,74 @@
 	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script src="js/common.js" type="text/javascript"></script>
 </head>
-
 <body>
 <!--start header-->
-<div id="header" class="global-width" >
-	<div id="logo"><a href="#" class="logo"><img src="images/logo.png"></a></div>
+<div class="header global-width" >
+	<div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
 	<div class="slogan">Oplossingen in <br /> <b>aandrijf- en pomptechniek</b></div>
 	<div class="top-right"><img src="images/top_right.png"></div>
 	<form id="form-search" name="form-search" method="post" action="#">
 	    <input name="editbox-search" class="editbox-search"type="text" value="ZOEKEN"
-			   onfocus="if(value=='ZOEKEN') {value=''}" onblur="if (value=='') {value='ZOEKEN'}" />
-		<input name="button-search" class="button-search" type="button" />
+			   onfocus="if(value=='ZOEKEN') {value=''}"  onblur="if (value=='') {value='ZOEKEN'}" />
+		<button name="button-search" class="button-search" type="button" /></button>
 	</form>
 </div>
-<div id="navigation">
-	<div id="nav" class="global-width">
-		<ul id="nav-bar">
-			<li class="nav-left"><img  src="images/nav_left.png"></li>
-			<li class="subnav" style="margin-left:0 "><a href="#" title="OVER FACTA">OVER FACTA</a></li>
-			<li class="subnav"><a href="#">ACTIVITEITEN</a></li>
-			<li class="subnav"><a href="#">NIEUWS</a></li>
-			<li class="subnav"><a href="#">CERTIFICATEN</a></li>
-			<li class="subnav"><a href="#">CONTACT</a></li>
-			<li class="subnav"><a href="#">LOG-IN</a></li>
-			<li class="nav-right"><img  src="images/nav_rigth.png"></li>
+<div class="nav global-width">
+		<span class="nav-left"></span>
+		<ul>
+			<li ><a href="overfacta.html" title="OVER FACTA">OVER FACTA</a></li>
+			<li><a href="nieuwbouw.html">ACTIVITEITEN</a></li>
+			<li><a href="nieuws.html">NIEUWS</a></li>
+			<li><a href="#">CERTIFICATEN</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li ><a href="login.html">LOG-IN</a></li>
 		</ul>
-	</div>
 </div>
 <!--start banner-->
-<div id="banner-wrapper">
-	<div id="banner-pic-wrap"class="global-width">
+<div class="banner-wrapper">
+	<div class="banner-pic-wrap global-width">
 		<img class="banner-pic" src="images/banner_01.jpg" >
 		<!--<img class="banner_pic" src="images/banner_02.jpg" >-->
-		<img class="banner-left-shadow" src="images/banner_shadow_03.jpg">
-		<img class="banner-right-shadow" src="images/banner_shadow_03.jpg" >
+		<div class="banner-left-shadow mask" ></div>
+		<div class="banner-right-shadow mask" ></div>
 	</div>
 </div>
 
 <!--start main-->
-<div id="main"class="global-width">
-	<img class="main-left-shadow" src="images/main_shadow_03.jpg">
-	<img class="main-right-shadow" src="images/main_shadow_05.jpg" >
-    <div class="index"><span>U bevind zich hier   >   </span>
-		<ul class="breadcrumb">
-		<li><a href="#" class="current">Home</a><li>
-		</ul>
-	</div>
+<div class="main  global-width">
+	<div class="main-left-shadow"></div>
+	<div class="main-right-shadow" ></div>
+	<ul class="breadcrumb">
+		<li><a href="#">U bevind zich hier  &nbsp; > &nbsp;</a> </li>
+		<li><span>Home</span><li>
+	</ul>
     <div class="leftcolumn">
         <h3>activiteiten</h3>
 		<ul>
-            <li class="sidebar"><a onclick="show()">pomptechniek</a></li>
-		<ul class="sidebar-menu">
-			<li class="submenu"><a href="#">onderhoud en storing</a></li>
-			<li class="submenu"><a href="#">	renovatie</a></li>
-			<li class="submenu"><a href="#">	nieuwbouw</a></li>
-			<li class="submenu"><a href="#">reparatie</a></li>
-			<li class="submenu"><a href="#">telemetrie</a></li>
-			<li class="submenu" id="last-item"><a href="#">paneelbouw</a></li>
-		</ul>
-		<li class="sidebar"><a href="#">aandrijftechniek</a></li>
-		<li class="sidebar"><a href="#">lifttechniek</a></li>
-		<li class="sidebar"><a href="#">besturingstechniek</a></li>
-		<li class="sidebar"><a href="#">verkoop</a></li>
+			<li class="side-menu"><a onclick="show()">POMPTECHNIEK</a>
+				<!--<ul class="sub-menu">-->
+					<!--<li><a href="#">onderhoud en storing</a></li>-->
+					<!--<li><a href="#">	renovatie</a></li>-->
+					<!--<li><a href="#">	nieuwbouw</a></li>-->
+					<!--<li><a href="#">reparatie</a></li>-->
+					<!--<li><a href="#">telemetrie</a></li>-->
+			        <!--<li class="last-item"><a href="#">paneelbouw</a></li>-->
+				<!--</ul>-->
+			</li>
+		<li class="side-menu"><a href="#">AANDRIJFTECHNIEK</a></li>
+		<li class="side-menu"><a href="#">LIFTTECHNIEK</a></li>
+		<li class="side-menu"><a href="#">BESTURINGSTECHNIEK</a></li>
+		<li class="side-menu"><a href="#">VERKOOP</a></li>
 	</ul>
     </div>
     <div class="rightcolumn">
         <h3>welkom <b>bij facta</b></h3>
 		<div class="page-wrapper">
-        <p >Solorendellut mo es ipicill essundi scipidit, sit aut occuptatum
+        <p class="pg-first">Solorendellut mo es ipicill essundi scipidit, sit aut occuptatum
             fuga.Itatem doluptaquo omniaspid quiaspi enduciature pedis dis
             est occaere prae.Itas assunti busapeditio inus maionse quisci ium
             volorro iduci ut volesti sit ide omnimus. </p>
-		</div>
-		<div class="page-next-wrapper">
-        <p >tatur aspienis excerum rerunt atiati occusdaero doluptati ut quiam conserc hillacius, ipsam,conse eaque
+        <p >Itatur aspienis excerum rerunt atiati occusdaero doluptati ut quiam conserc hillacius, ipsam,conse eaque
             voluptium qui aut rerspiciisi diantia veliatest fugitibus rest aut etur solupta tquias re ditatis aut ut et venda
             cones aceaquam et qui blandi re, as enimet, volest, untinveri beres inulliquam fuga.Ad utemporro doluptis
             magnat aut excearit eum debit ressit aut velent.Endit qui dolene conetur min non nonsectur solupid ma
@@ -96,8 +90,8 @@
 </div>
 
 <!--start bottom-->
-<div id="bottom" >
-     <div id="bottominfo" class="global-width">
+<div class="bottom" >
+     <div class="global-width">
 	<!-- bottom center information -->
           <div class="bottomcolumn">
 				<h3>Producten</h3>
@@ -109,7 +103,7 @@
 					<li><a>Aenean egestas luctus dui</a></li>
 					<li><a>Proin eget ante nisl</a></li>
 				</ul>
-			</div>
+		  </div>
           <div class="bottomcolumn">
 				<h3>Facta</h3>
 				<ul>

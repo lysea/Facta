@@ -17,7 +17,7 @@
  function show() {
      // var sidebar = document.getElementsByClassName("sidebar");
      if (document.getElementsByClassName) {
-         var submenu = document.getElementsByClassName("sidebar-menu");
+         var submenu = document.getElementsByClassName("sub-menu");
          if (submenu[0].style.display == 'none') {
              submenu[0].style.display = 'block';
          }
