@@ -29,38 +29,36 @@ a:hover{text-decoration: none;cursor: pointer;}
 }
 .logo{
     float:left;
-    padding-top: 30px;
-    margin-left: 40px;
+    margin: 30px 0 0 30px;
     width:152px;
     height:65px;
 }
  .header .slogan{
-    padding-top: 65px;
-     margin-left:220px;
+     float: left;
+     margin: 65px 0 0 20px;
      width:200px;
      height: 35px;
      font-size: 15px;
      line-height: 15px;
 }
 .header .top-right{
-    position: absolute;
+    /*position: absolute;*/
     float:right;
     right: 0;
-    top: 8px;
-    /*border:1px solid #98bf21;*/
+    margin-top: 8px;
 }
 #form-search{
     clear: right;
-    position: absolute;
     float: right ;
     right:0;
-    bottom: 5px;
+    margin-bottom: 5px;
     width:238px;
     height:26px;
-    /*border:1px solid #98bf21;*/
+
 }
 #form-search .editbox-search{
-    float:left;
+
+    vertical-align: top;
     border: 0;
     width: 154px;
     padding-left: 50px;
@@ -69,7 +67,6 @@ a:hover{text-decoration: none;cursor: pointer;}
     background: url(images/search_03.jpg) no-repeat;
 }
 #form-search .button-search{
-    float:right;
     border: 0;
     width: 26px;
     height:26px;
@@ -83,13 +80,13 @@ a:hover{text-decoration: none;cursor: pointer;}
 }
 .nav-left{
     position: absolute;
+    display: inline-block;
     width:19px;
     height:31px;
     background: url(images/nav_left.png);
 }
 .nav ul{
     height:38px;
-    width:974px;
     background: url(images/navbar.png);
 }
 
@@ -98,7 +95,6 @@ a:hover{text-decoration: none;cursor: pointer;}
     margin-right: -24px;
     display: inline-block;
     width:181px;
-    height:38px;
     text-align: center;
     background: url(images/nav_line.png) no-repeat right;
 }
@@ -135,11 +131,11 @@ a:hover{text-decoration: none;cursor: pointer;}
     background:url(images/banner_shadow_03.jpg);
 }
  .banner-left-shadow {
-    float: left;
+    /*float: left;*/
     left:-37px;
 }
  .banner-right-shadow {
-    float: right;
+    /*float: right;*/
     right:-37px;
 }
 
@@ -160,7 +156,7 @@ a:hover{text-decoration: none;cursor: pointer;}
 }
 .main-left-shadow {
     position: absolute;
-    float: left;
+    /*float: left;*/
     left:-20px;
     top:-3px;
     width:20px;
@@ -169,7 +165,7 @@ a:hover{text-decoration: none;cursor: pointer;}
 }
 .main-right-shadow {
     position: absolute;
-    float: right;
+    /*float: right;*/
     top:-3px;
     right:-24px;
     width:24px;
@@ -472,7 +468,7 @@ a:hover{text-decoration: none;cursor: pointer;}
 /* =5 Footer
 ---------------------------------------------------------------------------------------------------------------------*/
 .bottom{
-    clear: both;
+    /*clear: both;*/
     float:left;
     margin-top:60px;
     margin-bottom:120px;
@@ -481,8 +477,9 @@ a:hover{text-decoration: none;cursor: pointer;}
 }
 .bottomcolumn{
     float: left;
-    width:194px;
+    padding-right: 10px;
     padding-bottom: 20px;
+    width:184px;
 }
 .bottomcolumn h3{
     line-height: 24px;
