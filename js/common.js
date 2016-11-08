@@ -1,6 +1,7 @@
 /**
  * Created by Lysea on 2016/10/14.
 //  */
+
 // window.onload = function(){
 //
 //     var images = document.getElementsByClassName('banner_pic');
@@ -14,6 +15,7 @@
 //
 //     },2000);
 // };
+
  function show() {
      // var sidebar = document.getElementsByClassName("sidebar");
      if (document.getElementsByClassName) {
@@ -22,6 +24,18 @@
              submenu[0].style.display = 'block';
          }
          else submenu[0].style.display = 'none';
-     //     alert("cnueiwb");
      }
  }
+$(document).ready(function(){
+    $(".body-text").siblings("span").css("color","#0392ce");
+    $(".body-text").siblings(".text-button").css("background","url(style/images/btn_01.png) no-repeat");
+    $(".text-button").click(function(){
+        $(".body-text").slideToggle("fast");
+    });
+
+});
+$(document).ready(function(){
+    $(".article").hover(function(){
+        $(this).children(".full-text").toggleClass("hover_bg")
+    });
+});
