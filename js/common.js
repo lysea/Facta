@@ -29,10 +29,9 @@
 $(document).ready(function(){
     $(".body-text").siblings("span").css("color","#0392ce");
     $(".body-text").siblings(".text-button").css("background","url(style/images/btn_01.png) no-repeat");
-    $(".text-button").click(function(){
+    $(".body-text").siblings(".text-button").click(function(){
         $(".body-text").slideToggle("fast");
     });
-
 });
 $(document).ready(function(){
     $(".article").hover(function(){
