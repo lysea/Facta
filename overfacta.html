@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Site Name</title>
+    <title>over facta</title>
     <link href="style/reset.css" type="text/css" rel="stylesheet" media="all">
     <link href="style/base.css" type="text/css" rel="stylesheet" media="all">
     <link href="style/common.css" type="text/css" rel="stylesheet" media="screen">
@@ -22,7 +22,7 @@
     <form id="form-search" name="form-search" method="post" action="#">
         <input name="editbox-search" class="editbox-search"type="text" value="ZOEKEN"
                onfocus="if(value=='ZOEKEN') {value=''}"  onblur="if (value=='') {value='ZOEKEN'}" />
-        <button name="button-search" class="button-search" type="button" /></button>
+        <a href="zoek.html"><button name="button-search" class="button-search" type="button" /></button></a>
     </form>
 </div>
 <div class="nav global-width">
@@ -31,7 +31,7 @@
         <li ><a href="overfacta.html" title="OVER FACTA">OVER FACTA</a></li>
         <li><a href="nieuwbouw.html">ACTIVITEITEN</a></li>
         <li><a href="nieuws.html">NIEUWS</a></li>
-        <li><a href="#">CERTIFICATEN</a></li>
+        <li><a href="overfacta.html">CERTIFICATEN</a></li>
         <li><a href="contact.html">CONTACT</a></li>
         <li ><a href="login.html">LOG-IN</a></li>
     </ul>
@@ -55,24 +55,24 @@
         <li><span>Home</span><li>
     </ul>
     <div class="leftcolumn">
-        <h3>activiteiten</h3>
+        <h3 class="title">activiteiten</h3>
         <ul>
-            <li class="side-menu"><a onclick="show()">POMPTECHNIEK</a>
-                <!--<ul class="sub-menu">-->
-                <!--<li><a href="#">onderhoud en storing</a></li>-->
-                <!--<li><a href="#">	renovatie</a></li>-->
-                <!--<li><a href="#">	nieuwbouw</a></li>-->
-                <!--<li><a href="#">reparatie</a></li>-->
-                <!--<li><a href="#">telemetrie</a></li>-->
-                <!--<li class="last-item"><a href="#">paneelbouw</a></li>-->
-                <!--</ul>-->
+            <li><span><a onclick="show()">POMPTECHNIEK</a></span>
+                <ul class="sub-menu">
+                    <li><a href="#">onderhoud en storing</a></li>
+                    <li><a href="#">	renovatie</a></li>
+                    <li><a href="#">	nieuwbouw</a></li>
+                    <li><a href="#">reparatie</a></li>
+                    <li><a href="#">telemetrie</a></li>
+                    <li><a href="#">paneelbouw</a></li>
+                </ul>
             </li>
             <li class="side-menu"><a href="#">AANDRIJFTECHNIEK</a></li>
             <li class="side-menu"><a href="#">LIFTTECHNIEK</a></li>
             <li class="side-menu"><a href="#">BESTURINGSTECHNIEK</a></li>
             <li class="side-menu"><a href="#">VERKOOP</a></li>
         </ul>
-        <span class="headline">vacatures</span>
+       <h3 class="headline"><a href="vacat.html">vacatures</a></h3>
     </div>
     <div class="rightcolumn">
         <h3>over <b> &nbsp;facta</b></h3>
