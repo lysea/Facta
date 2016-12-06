@@ -210,13 +210,12 @@ a:hover{text-decoration: none;cursor: pointer;}
     padding: 5px 0;
     border-bottom:3px dotted #000;
 }
-.leftcolumn ul li span {
+#open{
     display: block;
     line-height: 16px;
     padding: 5px 0;
     border-bottom:3px dotted #000000;
 }
-
 .leftcolumn .article{
     position: relative;
     line-height: 16px;
@@ -327,6 +326,7 @@ dl dt{
     line-height:16px;
     padding :7px 0;
     border-bottom:3px dotted #000000;
+    cursor: pointer;
 }
 .content-header {color: #1493cf}
 .object{
@@ -343,7 +343,7 @@ dl dt{
 }
 .body-text{
     padding: 10px 80px 20px 0;
-    display: none;
+    /*display: none;*/
 }
 .body-text span{
     display: block;
@@ -361,9 +361,10 @@ dl dt{
     color: #ffffff;
     background: url(images/btn.png) no-repeat;
 }
-.rightcolumn h4 span{
-    color:#939598;
-}
+.blue{ color:#0392ce;}
+.text-header:hover{ color:#0392ce; }
+.off{ background: url(images/btn_01.png) no-repeat}
+.rightcolumn h4 span{  color:#939598;  }
 .list-view .list{
     position:relative;
     line-height:16px;
